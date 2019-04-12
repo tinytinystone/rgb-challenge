@@ -1,23 +1,24 @@
-html, body{
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
   color: white;
-  font-family: 'Montserrat',
-  'Avenir',
-  sans-serif;
+  font-family: "Montserrat", "Avenir", sans-serif;
   font-weight: 400;
   font-size: 13pt;
   box-sizing: border-box;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
   list-style: none;
   padding: 0;
 }
 
-.wrap{
+.wrap {
   display: flex;
   flex-direction: column; /* 햄버거처럼 쌓이는 방식 */
   height: 100%;
@@ -36,24 +37,24 @@ ol, ul, li {
   font-size: 300%;
 }
 
-.option{
+.option {
   height: 50px;
   width: 50px;
   border: 1px solid black;
   cursor: pointer;
 }
 
-.top{
+.top {
   background: steelblue;
   text-align: center;
   padding: 20px;
 }
 
-.top span{
+.top span {
   font-size: 3em;
 }
 
-.bottom{
+.bottom {
   flex-grow: 1;
   background: #232323;
   display: flex;
@@ -66,22 +67,22 @@ ol, ul, li {
   text-align: center;
 }
 
-.score span{
+.score span {
   display: inline;
   font-size: 1em;
 }
 
-.game-center{
+.game-center {
   position: relative;
-  top: 50%;
+  top: 30%;
 }
-.options{
+.options {
   text-align: center;
   position: relative;
   z-index: 10;
 }
 
-.option{
+.option {
   display: inline-block;
   border-radius: 50%;
   margin-right: 10px;
@@ -89,50 +90,54 @@ ol, ul, li {
   border: none;
 }
 
-.modal{
-  transform: scale(40);
+.modal {
+  transform: scale(100);
 }
 
-.option:last-child{
+.option:last-child {
   margin-right: 0;
 }
 
-.correct, .wrong{
+.correct,
+.wrong {
   display: none;
   position: absolute;
   z-index: 100;
   top: 30vh;
   width: 100vw;
   text-align: center;
-  font-weight: 900
+  font-weight: 900;
 }
 
-.correct.open{
+.correct.open {
   display: block;
 }
 
-.wrong.open{
+.wrong.open {
   display: block;
 }
 
-.modal-inner{
+.modal-inner {
   display: block;
   width: 400px;
   margin: 0 auto;
 }
 
-.next-stage, .play-again{
+.next-stage,
+.play-again {
   border: 1px solid #fff;
   border-radius: 5%;
   padding: 10px 20px;
   width: 100px;
   margin: 40px auto;
+  cursor: pointer;
 }
 
-.right-modal, .wrong-modal{
+.right-modal,
+.wrong-modal {
   font-size: 3rem;
 }
 
-.modal-score{
+.modal-score {
   font-size: 1.5rem;
 }
